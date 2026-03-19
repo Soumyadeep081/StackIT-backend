@@ -66,3 +66,4 @@ Example endpoints:
 
 ## 🤝 Contributing
 Feel free to fork the repo and submit pull requests!
+
