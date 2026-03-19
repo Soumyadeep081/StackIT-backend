@@ -32,7 +32,6 @@ public class Answer {
     @Indexed
     private String questionId;
 
-
     @CreatedDate
     @Indexed
     private LocalDateTime createdAt;
