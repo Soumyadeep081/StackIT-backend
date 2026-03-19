@@ -35,9 +35,11 @@ public class QuestionController {
     public Mono<QuestionResponseDTO> createQuestion(@RequestBody QuestionRequestDTO questionRequestDTO) {
         return questionService.createQuestion(questionRequestDTO)
         .doOnSuccess(response -> System.out.println("Question created successfully: " + response))
-        .doOnError(error -> System.out.println("Error creating question: " + error));
+        .doOnError(error -> System.out.println
+                ("Error creating question: " + error));
     }
-    
+
+
     @GetMapping("/{id}")
     public Mono<QuestionResponseDTO> getQuestionById(@PathVariable String id) {
         return questionService.getQuestionById(id)
