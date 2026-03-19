@@ -31,8 +31,9 @@ public class AnswerController {
     public Mono<ResponseEntity<AnswerResponseDTO>> createAnswer(@Valid @RequestBody AnswerRequestDTO answerRequestDTO) {
         return answerService.createAnswer(answerRequestDTO)
                 .map(answer -> ResponseEntity.status(HttpStatus.CREATED).body(answer))
-                .onErrorResume(error -> Mono.just(ResponseEntity.badRequest().build()));
+                .onErrorResume(error -> Mono.just (ResponseEntity.badRequest().build()));
     }
+
 
     @GetMapping("/{id}")
     public Mono<ResponseEntity<AnswerResponseDTO>> getAnswerById(@PathVariable String id) {
