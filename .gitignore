@@ -1,0 +1,59 @@
+# ======================
+# Java / Gradle
+# ======================
+*.class
+*.log
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# ======================
+# IntelliJ IDEA
+# ======================
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# ======================
+# Eclipse / STS
+# ======================
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+bin/
+
+# ======================
+# VS Code
+# ======================
+.vscode/
+
+# ======================
+# OS files
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# Logs
+# ======================
+logs/
+*.log
+
+# ======================
+# Environment files
+# ======================
+.env
+application-local.yml
+application-dev.yml
+
+# ======================
+# Docker (optional)
+# ======================
+*.pid
+*.seed
